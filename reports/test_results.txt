@@ -1,0 +1,4 @@
+Latest command: .venv/Scripts/python.exe -m pytest -q --tb=short
+118 passed in 47.91s
+Includes original backend checks and UI integration API checks under both algorithms.
+Frontend: npm test -> 6 passed; npm run build -> successful.

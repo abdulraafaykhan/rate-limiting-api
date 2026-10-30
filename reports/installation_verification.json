@@ -1,0 +1,31 @@
+{
+  "app_path": "C:\\Users\\User\\AppData\\Local\\Temp\\rate-limiter-install-check\\Lib\\site-packages\\app\\main.py",
+  "entry_path": "C:\\Users\\User\\AppData\\Local\\Temp\\rate-limiter-install-check\\Lib\\site-packages\\rate_limiter_api\\__init__.py",
+  "packaged_lua": [
+    "acquire_active_request.lua",
+    "count_active_requests.lua",
+    "release_active_request.lua",
+    "renew_active_request.lua",
+    "sliding_window_log.lua",
+    "token_bucket.lua"
+  ],
+  "installed_console_health": 200,
+  "data_responses": [
+    {
+      "status": 200,
+      "body": {
+        "message": "Request successful",
+        "user_id": "user_101",
+        "remaining_requests": 0
+      }
+    },
+    {
+      "status": 429,
+      "body": {
+        "error": "Rate limit exceeded",
+        "retry_after": 60
+      }
+    }
+  ],
+  "result": "PASS"
+}

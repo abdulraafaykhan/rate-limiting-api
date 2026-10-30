@@ -1,0 +1,12 @@
+{
+  "sliding_window_log": {
+    "concurrency_attack.py": "Sent 100 requests, quota 10\n  HTTP 200 (allowed): 10\n  HTTP 429 (blocked): 90\nRESULT: PASS\n",
+    "multi_user_attack.py": "user_101 (attacker): {200: 5, 429: 45}\nuser_102 (polite):   {200: 3}\nuser_103 (polite):   {200: 3}\nRESULT: PASS\n",
+    "two_instances_demo.py": "request 1: sent to http://127.0.0.1:62054 (served by verification-api1) -> HTTP 200\nrequest 2: sent to http://127.0.0.1:62055 (served by verification-api2) -> HTTP 200\nrequest 3: sent to http://127.0.0.1:62054 (served by verification-api1) -> HTTP 200\nrequest 4: sent to http://127.0.0.1:62055 (served by verification-api2) -> HTTP 200\nrequest 5: sent to http://127.0.0.1:62054 (served by verification-api1) -> HTTP 200\nrequest 6: sent to http://127.0.0.1:62055 (served by verification-api2) -> HTTP 429\nRESULT: PASS\n"
+  },
+  "token_bucket": {
+    "concurrency_attack.py": "Sent 100 requests, quota 10\n  HTTP 200 (allowed): 10\n  HTTP 429 (blocked): 90\nRESULT: PASS\n",
+    "multi_user_attack.py": "user_101 (attacker): {200: 5, 429: 45}\nuser_102 (polite):   {200: 3}\nuser_103 (polite):   {200: 3}\nRESULT: PASS\n",
+    "two_instances_demo.py": "request 1: sent to http://127.0.0.1:62108 (served by verification-api1) -> HTTP 200\nrequest 2: sent to http://127.0.0.1:62109 (served by verification-api2) -> HTTP 200\nrequest 3: sent to http://127.0.0.1:62108 (served by verification-api1) -> HTTP 200\nrequest 4: sent to http://127.0.0.1:62109 (served by verification-api2) -> HTTP 200\nrequest 5: sent to http://127.0.0.1:62108 (served by verification-api1) -> HTTP 200\nrequest 6: sent to http://127.0.0.1:62109 (served by verification-api2) -> HTTP 429\nRESULT: PASS\n"
+  }
+}
